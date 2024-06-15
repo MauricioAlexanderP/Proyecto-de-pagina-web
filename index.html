@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AcuaTech</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,7 +18,7 @@
           <img src="img/logo.png" width="45" height="44">
           <span class="logo">AquaTech</span>
         </a>
-
+  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,71 +48,160 @@
     <div class="content">
       <h1 class="logo_Principal">AquaTech</h1>
       <div class="descripcion">
-        <p class="descripcion__text">En AquaTech, estamos transformando el futuro de la agricultura con sistemas de riego automáticos y eficientes.
+        <p class="descripcion__text">En AquaTech, estamos transformando el futuro de la agricultura con sistemas de riego
+          automáticos y eficientes.
           Nuestra
-          misión es proporcionar soluciones de riego de alta tecnología que maximicen la productividad, minimicen el desperdicio
+          misión es proporcionar soluciones de riego de alta tecnología que maximicen la productividad, minimicen el
+          desperdicio
           de agua y promuevan la sostenibilidad.</p>
       </div>
     </div>
-    <div class="content">
-      <a href="#historia"><button class="btn" type="button">Conocer mas</button></a>
+    <div class="position-relative">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <button class="boton" type="button"><a style="text-decoration: none; color: #FFF;" href="#historia">Conocer mas</a></button>
+      </div>
     </div>
   </section>
+
   <section class="row descripcion" id="historia">
-    <div class="col-md-8">
+    <div class="col-md-7 descripcion">
       <h2 class="titulo__descripcion">Descripcion</h2>
-      <p class="descripcion">
-        Con AquaTech, cada gota cuenta. Utilizamos lo último en tecnología de sensores y control automatizado para asegurar que
+      <p >
+        Con AquaTech, cada gota cuenta. Utilizamos lo último en tecnología de sensores y control automatizado para
+        asegurar que
         tus cultivos reciban la cantidad exacta de agua que necesitan, exactamente cuando la necesitan. Nuestro enfoque
         inteligente no solo mejora la salud y el rendimiento de tus plantas, sino que también optimiza el uso de recursos,
         reduciendo costos y protegiendo el medio ambiente.
-      </p>
-      <p class="descripcion">
+        <br><br>
         Con AquaTech, no solo obtienes un producto, sino una solución integral que optimiza tus recursos, incrementa tus
-        rendimientos y cuida del medio ambiente. Confía en nosotros para transformar tu manera de cultivar y llevar tus cosechas
+        rendimientos y cuida del medio ambiente. Confía en nosotros para transformar tu manera de cultivar y llevar tus
+        cosechas
         al siguiente nivel. ¡Descubre el poder del riego inteligente con AquaTech!
       </p>
     </div>
-    <div class="col-6 col-md-4">
-      <img style="width: 350px;" src="img/logo.png" alt="">
+    <div class="col-3 col-md-4">
+      <img class="imgGota"  src="img/logo.png" alt="">
     </div>
   </section>
-  <section class="productos">
+  <section>
     <h2 class="titulo__descripcion">Nuestros productos</h2>
-    <div class="row">
-      <div class="col-6 col-md-4">
-        <div class="card">
-          <img src="img/producto1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sistema de riego por goteo</h5>
-            <p class="card-text">El sistema de riego por goteo de AquaTech es la solución perfecta para cultivos de hortalizas,
-              frutas y flores. Con una distribución uniforme del agua y una eficiencia del 95%, este sistema garantiza que tus
-              plantas reciban la cantidad exacta de agua que necesitan, sin desperdiciar ni una gota.</p>
+    <div class="album py-5 ">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/producto1.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Sistema de riego por goteo</h5>
+                <p class="card-text">El sistema de riego por goteo de AquaTech es la solución perfecta para cultivos de
+                  hortalizas, frutas y flores. Con una distribución uniforme del agua y una eficiencia del 95%, este sistema
+                  garantiza que tus plantas reciban la cantidad exacta de agua que necesitan, sin desperdiciar ni una gota.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="card">
-          <img src="img/producto2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sistema de riego por aspersión</h5>
-            <p class="card-text">El sistema de riego por aspersión de AquaTech es ideal para cultivos de gran extensión, como
-              campos de maíz, trigo y arroz. Con una cobertura de hasta 20 metros, este sistema garantiza una distribución uniforme
-              del agua y una eficiencia del 90%, maximizando la productividad de tus cultivos.</p>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/producto2.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Sistema de riego por aspersión</h5>
+                <p class="card-text">>El sistema de riego por aspersión de AquaTech es ideal para cultivos de gran
+                  extensión, como campos de maíz, trigo y arroz. Con una cobertura de hasta 20 metros, este sistema
+                  garantiza un distribución uniforme del agua y una eficiencia del 90%, maximizando la productividad de tus
+                  cultivos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="card">
-          <img src="img/producto3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sistema de riego por nebulización</h5>
-            <p class="card-text">El sistema de riego por nebulización de AquaTech es perfecto para cultivos de invernadero, como
-              tomates, pepinos y pimientos. Con una distribución uniforme del agua y una eficiencia del
+    
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/producto3.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Sistema de riego por nebulización</h5>
+                <p class="card-text">El sistema de riego por nebulización de AquaTech es perfecto para cultivos de
+                  invernadero, como tomates, pepinos y pimientos. Con una distribución uniforme del agua y una eficiencia
+                  del</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/producto4.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Sistema de riego por microaspiriación</h5>
+                <p class="card-text">El sistema de riego por microaspersión de AquaTech es ideal para invernaderos y cultivos delicados como fresas y
+                hortalizas. Este sistema produce una neblina fina que cubre un área de hasta 5 metros, proporcionando una hidratación
+                suave y uniforme.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/producto5.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Sistema de riego por exudación</h5>
+                <p class="card-text">El sistema de riego por exudación de AquaTech es ideal para jardines residenciales y cultivos en hileras como tomates y
+                pepinos. Las tuberías porosas permiten una liberación gradual y uniforme del agua a lo largo de toda la línea de riego.
+                Con una eficiencia del 90%, este sistema es perfecto para mantener una humedad constante y uniforme en el suelo.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/producto6.webp" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Sistema de riego por surcos</h5>
+                <p class="card-text">El sistema de riego por surcos automatizado de AquaTech es ideal para cultivos en hileras, como maíz, frijoles y papas.
+                Este sistema canaliza el agua a través de surcos a lo largo de las filas de cultivos, permitiendo una infiltración
+                gradual en el suelo. Con una eficiencia del 85%, asegura un riego uniforme y efectivo para cultivos en terrenos
+                inclinados o irregulares.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
