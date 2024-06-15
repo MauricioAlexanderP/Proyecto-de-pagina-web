@@ -2,6 +2,7 @@
   font-family: tituloTipografia;
   src: url("fonts/tituloTipografia.ttf");
 }
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 :root {
   --colorPrimario: #a3cd30;
   --degradadoFondo: rgba(12, 12, 12, 0.425);
@@ -81,6 +82,10 @@ html {
 }
 .imgGota{
   width: 350px;
+}
+
+.productos{
+  height: 299px;
 }
 
 @media (min-width: 768px) {
