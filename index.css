@@ -1,0 +1,168 @@
+@font-face {
+  font-family: tituloTipografia;
+  src: url("fonts/tituloTipografia.ttf");
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+:root {
+  --colorPrimario: #a3cd30;
+  --degradadoFondo: rgba(12, 12, 12, 0.425);
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+.inicio {
+  width: 100%;
+  height: 100vh;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-link:hover {
+  background-color: var(--colorPrimario);
+  border-radius: 7px;
+}
+.nav-link {
+  padding: 4px;
+  font-size: 20px;
+}
+.logo {
+  font-family: tituloTipografia;
+  color: #000;
+  font-size: 100%;
+  text-align: center;
+}
+
+.logo_Principal {
+  font-family: tituloTipografia;
+  font-size: 55px;
+  color: var(--colorPrimario);
+}
+.descripcion {
+  padding: 0 25px 0 25px;
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.boton {
+  background-color: #a3cd30;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 19px;
+}
+
+.titulo__descripcion {
+  font-family: tituloTipografia;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.descripcion__text {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+}
+.imgGota{
+  width: 350px;
+}
+
+.productos{
+  height: 299px;
+}
+a{
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .inicio {
+    width: 100%;
+    height: 40vh;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    z-index: -10;
+  }
+  .logo_Principal {
+    font-family: tituloTipografia;
+    font-size: 90px;
+    color: var(--colorPrimario);
+  }
+  .descripcion {
+    text-align: justify;
+    font-size: 18px;
+  
+  } 
+  .imgGota{
+    width: auto;
+
+  }
+}
+
+@media (min-width: 1024px){
+  .inicio {
+    width: 100%;
+    height: 100vh;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+  }
+  .nav-item{
+    font-size: 18px;
+  }
+  .logo{
+    font-size: 25px;
+  }
+  .descripcion__text {
+    color: #fff;
+    font-size: 24px;
+    text-align: justify;
+  }
+  .boton {
+    background-color: #a3cd30;
+    color: white;
+    padding: 8px 10px 10px 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 22px;
+  }
+  .titulo__descripcion {
+    font-family: tituloTipografia;
+    text-align: center;
+    font-size: 65px;
+    margin-top: 30px;
+  }
+  .descripcion {
+    padding: 0 25px 0 25px;
+    text-align: justify;
+    font-size: 20px;
+  
+  }
+}
